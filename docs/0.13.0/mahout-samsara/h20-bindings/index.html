@@ -1,0 +1,276 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+<head>
+    <meta name="author" content="The Apache Software Foundation">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="/assets/themes/zeppelin/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/zeppelin/css/style.css?body=1" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/zeppelin/css/syntax.css" rel="stylesheet"  type="text/css" media="screen" /> 
+
+<!--
+    <link href="/assets/themes/mahout/css/main.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global__.css" rel="stylesheet"  type="text/css" media="screen" /> 
+-->
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/assets/themes/zeppelin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+  </script>
+  <script type="text/javascript">
+    var mathjax = document.createElement('script'); 
+    mathjax.type = 'text/javascript'; 
+    mathjax.async = true;
+
+    mathjax.src = ('https:' == document.location.protocol) ?
+        'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' : 
+        'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    
+      var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(mathjax, s);
+  </script>
+
+
+    <!-- JavaScript 
+        <script src="/assets/themes/zeppelin/js/medium.controller.js"></script>
+    <script src="/assets/themes/zeppelin/js/moment.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/anchor.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/docs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://scotch-io.github.io/js/power.js"></script>
+    -->
+
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+
+
+<body class="">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/assets/themes/mahout/img/mahout-logo.png" width="75" alt="I'm mahout">
+            Apache Mahout
+          </a>
+        </div>
+        <nav class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- Quick Start -->
+            <li id="quickstart">
+              <a href="/docs/0.13.0/quickstart" >Quick Start</a>
+            </li>         
+
+             <li id="samsara">
+           <!-- Samsara docs  
+             old http://mahout.apache.org/users/sparkbindings/faq.html
+
+           -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mahout-Samsara<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Reference Info</b><span></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/incore">In-core Reference</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/outofcore">Out-of-core Reference</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/faq">Samsara FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Bindings</b><span></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/spark-bindings">Spark Bindings</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/flink-bindings">Flink Bindings</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/flink-bindings">H20 Bindings</a></li>
+              </ul>
+            </li>
+
+             <li id="tutorials">
+           <!-- Tutorials -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Tutorials<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Spark Examples using Samsara</b><span></li>
+                <li><a href="/docs/0.13.0/tutorials/samsara-spark-shell">Samsara in Spark Shell</a></li>
+                <li><a href="/docs/0.13.0/tutorials/build-app">Samsara Spark Application</a></li>
+                <li><a href="/docs/0.13.0/tutorials/text-classification">Text Classification</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Fl</b><span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd1</a></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>MapReduce</b><span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd1</a></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd2</a></li>
+              </ul>
+            </li>
+
+
+            <!-- Algorithms (Samsara / MR) -->
+            <li id="algorithms">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Algorithms<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Samsara Code</b><span></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dssvd">Dist SVD</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dspca">Dist PCA</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dqr">Dist QR</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dals">Dist ALS</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Command Line</b><span></li>
+                <li><a href="/docs/0.13.0">algo1</a></li>
+                <li><a href="/docs/0.13.0">algo2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>xxxx</b>&nbsp;(xxxxx)<span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">xxxxx</a></li>
+              </ul>
+            </li>
+
+            <!-- Scala Docs -->
+            <li id="scaladocs">
+              <a href="tbd" data-toggle="dropdown" class="dropdown-toggle">Scala Docs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="title"><span><b>TODO - Needs update per new scaladocs</b><span></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Math</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math-scala/index.html">Mahout Math Scala bindings</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.htmlhttp://apache.github.io/mahout/0.10.1/docs/mahout-spark/index.html">Mahout Spark bindings</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Spark bindings shell</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout H2O backend Scaladoc</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout H2O backend Javadoc</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout HDFS</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Map-Reduce</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Examples</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Integration</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+        </nav><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+        <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 id="introduction">Introduction</h1>
+
+<p>This document provides an overview of how the Mahout Samsara environment is implemented over the H2O backend engine. The document is aimed at Mahout developers, to give a high level description of the design so that one can explore the code inside <code>h2o/</code> with some context.</p>
+
+<h2 id="h2o-overview">H2O Overview</h2>
+
+<p>H2O is a distributed scalable machine learning system. Internal architecture of H2O has a distributed math engine (h2o-core) and a separate layer on top for algorithms and UI. The Mahout integration requires only the math engine (h2o-core).</p>
+
+<h2 id="h2o-data-model">H2O Data Model</h2>
+
+<p>The data model of the H2O math engine is a distributed columnar store (of primarily numbers, but also strings). A column of numbers is called a Vector, which is broken into Chunks (of a few thousand elements). Chunks are distributed across the cluster based on a deterministic hash. Therefore, any member of the cluster knows where a particular Chunk of a Vector is homed. Each Chunk is separately compressed in memory and elements are individually decompressed on the fly upon access with purely register operations (thereby achieving high memory throughput). An ordered set of similarly partitioned Vecs are composed into a Frame. A Frame is therefore a large two dimensional table of numbers. All elements of a logical row in the Frame are guaranteed to be homed in the same server of the cluster. Generally speaking, H2O works well on “tall skinny” data, i.e, lots of rows (100s of millions) and modest number of columns (10s of thousands).</p>
+
+<h2 id="mahout-drm">Mahout DRM</h2>
+
+<p>The Mahout DRM, or Distributed Row Matrix, is an abstraction for storing a large matrix of numbers in-memory in a cluster by distributing logical rows among servers. Mahout’s scala DSL provides an abstract API on DRMs for backend engines to provide implementations of this API. Examples are the Spark and H2O backend engines. Each engine has it’s own design of mapping the abstract API onto its data model and provides implementations for algebraic operators over that mapping.</p>
+
+<h2 id="h2o-environment-engine">H2O Environment Engine</h2>
+
+<p>The H2O backend implements the abstract DRM as an H2O Frame. Each logical column in the DRM is an H2O Vector. All elements of a logical DRM row are guaranteed to be homed on the same server. A set of rows stored on a server are presented as a read-only virtual in-core Matrix (i.e BlockMatrix) for the closure method in the <code>mapBlock(...)</code> API.</p>
+
+<p>H2O provides a flexible execution framework called <code>MRTask</code>. The <code>MRTask</code> framework typically executes over a Frame (or even a Vector), supports various types of map() methods, can optionally modify the Frame or Vector (though this never happens in the Mahout integration), and optionally create a new Vector or set of Vectors (to combine them into a new Frame, and consequently a new DRM).</p>
+
+<h2 id="source-layout">Source Layout</h2>
+
+<p>Within mahout.git, the top level directory, <code>h2o/</code> holds all the source code related to the H2O backend engine. Part of the code (that interfaces with the rest of the Mahout componenets) is in Scala, and part of the code (that interfaces with h2o-core and implements algebraic operators) is in Java. Here is a brief overview of what functionality can be found where within <code>h2o/</code>.</p>
+
+<p>h2o/ - top level directory containing all H2O related code</p>
+
+<p>h2o/src/main/java/org/apache/mahout/h2obindings/ops/*.java - Physical operator code for the various DSL algebra</p>
+
+<p>h2o/src/main/java/org/apache/mahout/h2obindings/drm/*.java - DRM backing (onto Frame) and Broadcast implementation</p>
+
+<p>h2o/src/main/java/org/apache/mahout/h2obindings/H2OHdfs.java - Read / Write between DRM (Frame) and files on HDFS</p>
+
+<p>h2o/src/main/java/org/apache/mahout/h2obindings/H2OBlockMatrix.java - A vertical block matrix of DRM presented as a virtual copy-on-write in-core Matrix. Used in mapBlock() API</p>
+
+<p>h2o/src/main/java/org/apache/mahout/h2obindings/H2OHelper.java - A collection of various functionality and helpers. For e.g, convert between in-core Matrix and DRM, various summary statistics on DRM/Frame.</p>
+
+<p>h2o/src/main/scala/org/apache/mahout/h2obindings/H2OEngine.scala - DSL operator graph evaluator and various abstract API implementations for a distributed engine</p>
+
+<p>h2o/src/main/scala/org/apache/mahout/h2obindings/* - Various abstract API implementations (“glue work”)</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">This text is footer text. Footer text goes here.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

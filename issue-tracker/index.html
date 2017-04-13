@@ -1,0 +1,223 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+<head>
+    <meta name="author" content="The Apache Software Foundation">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="/assets/themes/zeppelin/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/zeppelin/css/style.css?body=1" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/zeppelin/css/syntax.css" rel="stylesheet"  type="text/css" media="screen" /> 
+
+<!--
+    <link href="/assets/themes/mahout/css/main.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global__.css" rel="stylesheet"  type="text/css" media="screen" /> 
+-->
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/assets/themes/zeppelin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+  </script>
+  <script type="text/javascript">
+    var mathjax = document.createElement('script'); 
+    mathjax.type = 'text/javascript'; 
+    mathjax.async = true;
+
+    mathjax.src = ('https:' == document.location.protocol) ?
+        'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' : 
+        'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    
+      var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(mathjax, s);
+  </script>
+
+
+    <!-- JavaScript 
+        <script src="/assets/themes/zeppelin/js/medium.controller.js"></script>
+    <script src="/assets/themes/zeppelin/js/moment.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/anchor.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/docs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://scotch-io.github.io/js/power.js"></script>
+    -->
+
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+
+
+<body class="">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/assets/themes/mahout/img/mahout-logo.png" width="75" alt="I'm mahout">
+            Apache Mahout
+          </a>
+        </div>
+        <nav class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li id="community">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Community<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/how-to-contribute">How to Contribute</a></li>
+                <li><a href="/issue-tracker">Issues Tracking (JIRA)</a></li>
+                <li><a href="/developers">Developers</a></li>
+                <li><a href="/mailing-lists">Mailing Lists</a></li>
+                <li><a href="/reference">References</a></li>
+              </ul>
+            </li>         
+            
+            <!-- Download -->
+            <li id="download">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Download<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/apache/mahout">Download Mahout</a></li>
+              </ul>
+            </li>
+
+            <!-- Docs -->
+            <li id="docs">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Docs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Release</b><span></li>
+                <li><a href="/docs/0.13.0/quickstart">0.13.0</a></li>
+                <li><a href="/tbd">Older Versions</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Snapshot</b>&nbsp;(development)<span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">0.13.1-SNAPSHOT</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/docs/0.13.0/quickstart">QuickStart</a></li>
+            <li><a href="https://github.com/apache/mahout">GitHub</a></li>
+
+            <!-- Apache -->
+            <li id="apache">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Apache<b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">Apache Software Foundation</a></li>
+                <li><a href="http://www.apache.org/licenses/">Apache License</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+
+
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <h1 id="issue-tracker">Issue tracker</h1>
+
+<p>Mahout’s issue tracker is located <a href="http://issues.apache.org/jira/browse/MAHOUT">here</a>.
+For most changes (apart from trivial stuff) Mahout works according to a review-then-commit model.
+This means anything that is to be added is first presented as a patch in the issue tracker. All conversations in the issue tracker are automatically
+echoed on the developer mailing list and people tend to respond or continue
+conversations there rather in the issue tracker, so in order to follow an
+issue you also have to read to the <a href="http://mahout.apache.org/general/mailing-lists,-irc-and-archives.html">mailing lists</a>.</p>
+
+<p>An issue does not literally have to be an issue. It could be a wish, task,
+bug report, etc. and it does not have to contain a patch.</p>
+
+<p>Mahout uses <a href="https://confluence.atlassian.com/display/JIRA/JIRA+Documentation">JIRA</a> by Atlassian.</p>
+
+<p><a name="IssueTracker-Bestpractise"></a></p>
+<h4 id="best-practices">Best practices</h4>
+
+<p>Don’t create duplicate issues. Make sure your problem is a problem and that
+nobody else already fixed it. If you are new to the project, it is often
+preferred that the subject of an issue is discussed on one of our mailing
+lists before an issue is created - in particular when it comes to adding new functionality.</p>
+
+<p>Quote only what it is you are responding to in comments.</p>
+
+<p>Patches should be created at trunk or trunk parent level and if possible be
+a single uncompressed text file so it is easy to inspect the patch in a web
+browser. (See <a href="/developers/patch-check-list.html">Patch Check List</a>
+.)</p>
+
+<p>Use the issue identity when referring to an issue in any discussion.
+“MAHOUT-n” and not “mahout-n” or “n”. MAHOUT-1 would automatically be
+linked to <a href="http://issues.apache.org/jira/browse/MAHOUT-1">MAHOUT-1</a>
+ in a better world.</p>
+
+<p>A note to committers: Make sure to mention the issue id in each commit. Not only has
+JIRA the capability of auto-linking commits to the issue they are related to
+that way, it also makes it easier to get further information for a specific commit
+when browsing through the commit log and within the commit mailing list.</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">This text is footer text. Footer text goes here.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

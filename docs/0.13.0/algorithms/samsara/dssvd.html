@@ -1,0 +1,370 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+<head>
+    <meta name="author" content="The Apache Software Foundation">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="/assets/themes/zeppelin/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/zeppelin/css/style.css?body=1" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/zeppelin/css/syntax.css" rel="stylesheet"  type="text/css" media="screen" /> 
+
+<!--
+    <link href="/assets/themes/mahout/css/main.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global.css" rel="stylesheet"  type="text/css" media="screen" /> 
+    <link href="/assets/themes/mahout/css/global__.css" rel="stylesheet"  type="text/css" media="screen" /> 
+-->
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/assets/themes/zeppelin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+  </script>
+  <script type="text/javascript">
+    var mathjax = document.createElement('script'); 
+    mathjax.type = 'text/javascript'; 
+    mathjax.async = true;
+
+    mathjax.src = ('https:' == document.location.protocol) ?
+        'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' : 
+        'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    
+      var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(mathjax, s);
+  </script>
+
+
+    <!-- JavaScript 
+        <script src="/assets/themes/zeppelin/js/medium.controller.js"></script>
+    <script src="/assets/themes/zeppelin/js/moment.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/anchor.min.js"></script>
+    <script src="/assets/themes/zeppelin/js/docs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://scotch-io.github.io/js/power.js"></script>
+    -->
+
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+</head>
+
+
+
+<body class="">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/assets/themes/mahout/img/mahout-logo.png" width="75" alt="I'm mahout">
+            Apache Mahout
+          </a>
+        </div>
+        <nav class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- Quick Start -->
+            <li id="quickstart">
+              <a href="/docs/0.13.0/quickstart" >Quick Start</a>
+            </li>         
+
+             <li id="samsara">
+           <!-- Samsara docs  
+             old http://mahout.apache.org/users/sparkbindings/faq.html
+
+           -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mahout-Samsara<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Reference Info</b><span></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/incore">In-core Reference</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/outofcore">Out-of-core Reference</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/faq">Samsara FAQ</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Bindings</b><span></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/spark-bindings">Spark Bindings</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/flink-bindings">Flink Bindings</a></li>
+                <li><a href="/docs/0.13.0/mahout-samsara/flink-bindings">H20 Bindings</a></li>
+              </ul>
+            </li>
+
+             <li id="tutorials">
+           <!-- Tutorials -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Tutorials<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Spark Examples using Samsara</b><span></li>
+                <li><a href="/docs/0.13.0/tutorials/samsara-spark-shell">Samsara in Spark Shell</a></li>
+                <li><a href="/docs/0.13.0/tutorials/build-app">Samsara Spark Application</a></li>
+                <li><a href="/docs/0.13.0/tutorials/text-classification">Text Classification</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Fl</b><span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd1</a></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>MapReduce</b><span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd1</a></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">tbd2</a></li>
+              </ul>
+            </li>
+
+
+            <!-- Algorithms (Samsara / MR) -->
+            <li id="algorithms">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Algorithms<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><span><b>Samsara Code</b><span></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dssvd">Dist SVD</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dspca">Dist PCA</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dqr">Dist QR</a></li>
+                <li><a href="/docs/0.13.0/algorithms/samsara/dals">Dist ALS</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>Command Line</b><span></li>
+                <li><a href="/docs/0.13.0">algo1</a></li>
+                <li><a href="/docs/0.13.0">algo2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><span><b>xxxx</b>&nbsp;(xxxxx)<span></li>
+                <li><a href="/docs/0.13.1-SNAPSHOT">xxxxx</a></li>
+              </ul>
+            </li>
+
+            <!-- Scala Docs -->
+            <li id="scaladocs">
+              <a href="tbd" data-toggle="dropdown" class="dropdown-toggle">Scala Docs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="title"><span><b>TODO - Needs update per new scaladocs</b><span></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Math</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math-scala/index.html">Mahout Math Scala bindings</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.htmlhttp://apache.github.io/mahout/0.10.1/docs/mahout-spark/index.html">Mahout Spark bindings</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Spark bindings shell</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout H2O backend Scaladoc</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout H2O backend Javadoc</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout HDFS</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Map-Reduce</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Examples</a></li>
+                <li><a href="http://apache.github.io/mahout/0.10.1/docs/mahout-math/index.html">Mahout Integration</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+        </nav><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+        <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 id="distributed-stochastic-singular-value-decomposition">Distributed Stochastic Singular Value Decomposition</h1>
+
+<h2 id="intro">Intro</h2>
+
+<p>Mahout has a distributed implementation of Stochastic Singular Value Decomposition <a href="[Mahout Scala and Mahout Spark Bindings for Linear Algebra Subroutines](http://mahout.apache.org/users/sparkbindings/ScalaSparkBindings.pdf)">1</a> using the parallelization strategy comprehensively defined in Nathan Halko’s dissertation <a href="http://amath.colorado.edu/faculty/martinss/Pubs/2012_halko_dissertation.pdf">“Randomized methods for computing low-rank approximations of matrices”</a> <a href="[Halko, Martinsson, Tropp](http://arxiv.org/abs/0909.4061)">2</a>.</p>
+
+<h2 id="modified-ssvd-algorithm">Modified SSVD Algorithm</h2>
+
+<p>Given an <code>\(m\times n\)</code>
+matrix <code>\(\mathbf{A}\)</code>, a target rank <code>\(k\in\mathbb{N}_{1}\)</code>
+, an oversampling parameter <code>\(p\in\mathbb{N}_{1}\)</code>, 
+and the number of additional power iterations <code>\(q\in\mathbb{N}_{0}\)</code>, 
+this procedure computes an <code>\(m\times\left(k+p\right)\)</code>
+SVD <code>\(\mathbf{A\approx U}\boldsymbol{\Sigma}\mathbf{V}^{\top}\)</code>:</p>
+
+<ol>
+  <li>
+    <p>Create seed for random <code>\(n\times\left(k+p\right)\)</code>
+  matrix <code>\(\boldsymbol{\Omega}\)</code>. The seed defines matrix <code>\(\mathbf{\Omega}\)</code>
+  using Gaussian unit vectors per one of suggestions in [Halko, Martinsson, Tropp].</p>
+  </li>
+  <li>
+    <p><code>\(\mathbf{Y=A\boldsymbol{\Omega}},\,\mathbf{Y}\in\mathbb{R}^{m\times\left(k+p\right)}\)</code></p>
+  </li>
+  <li>
+    <p>Column-orthonormalize <code>\(\mathbf{Y}\rightarrow\mathbf{Q}\)</code>
+  by computing thin decomposition <code>\(\mathbf{Y}=\mathbf{Q}\mathbf{R}\)</code>.
+  Also, <code>\(\mathbf{Q}\in\mathbb{R}^{m\times\left(k+p\right)},\,\mathbf{R}\in\mathbb{R}^{\left(k+p\right)\times\left(k+p\right)}\)</code>; denoted as <code>\(\mathbf{Q}=\mbox{qr}\left(\mathbf{Y}\right).\mathbf{Q}\)</code></p>
+  </li>
+  <li>
+    <p><code>\(\mathbf{B}_{0}=\mathbf{Q}^{\top}\mathbf{A}:\,\,\mathbf{B}\in\mathbb{R}^{\left(k+p\right)\times n}\)</code>.</p>
+  </li>
+  <li>
+    <p>If <code>\(q&gt;0\)</code>
+  repeat: for <code>\(i=1..q\)</code>: 
+  <code>\(\mathbf{B}_{i}^{\top}=\mathbf{A}^{\top}\mbox{qr}\left(\mathbf{A}\mathbf{B}_{i-1}^{\top}\right).\mathbf{Q}\)</code>
+  (power iterations step).</p>
+  </li>
+  <li>
+    <p>Compute Eigensolution of a small Hermitian <code>\(\mathbf{B}_{q}\mathbf{B}_{q}^{\top}=\mathbf{\hat{U}}\boldsymbol{\Lambda}\mathbf{\hat{U}}^{\top}\)</code>,
+  <code>\(\mathbf{B}_{q}\mathbf{B}_{q}^{\top}\in\mathbb{R}^{\left(k+p\right)\times\left(k+p\right)}\)</code>.</p>
+  </li>
+  <li>
+    <p>Singular values <code>\(\mathbf{\boldsymbol{\Sigma}}=\boldsymbol{\Lambda}^{0.5}\)</code>,
+  or, in other words, <code>\(s_{i}=\sqrt{\sigma_{i}}\)</code>.</p>
+  </li>
+  <li>
+    <p>If needed, compute <code>\(\mathbf{U}=\mathbf{Q}\hat{\mathbf{U}}\)</code>.</p>
+  </li>
+  <li>
+    <p>If needed, compute <code>\(\mathbf{V}=\mathbf{B}_{q}^{\top}\hat{\mathbf{U}}\boldsymbol{\Sigma}^{-1}\)</code>.
+Another way is <code>\(\mathbf{V}=\mathbf{A}^{\top}\mathbf{U}\boldsymbol{\Sigma}^{-1}\)</code>.</p>
+  </li>
+</ol>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Mahout <code>dssvd(...)</code> is implemented in the mahout <code>math-scala</code> algebraic optimizer which translates Mahout’s R-like linear algebra operators into a physical plan for both Spark and H2O distributed engines.</p>
+
+<pre><code>def dssvd[K: ClassTag](drmA: DrmLike[K], k: Int, p: Int = 15, q: Int = 0):
+    (DrmLike[K], DrmLike[Int], Vector) = {
+
+    val drmAcp = drmA.checkpoint()
+
+    val m = drmAcp.nrow
+    val n = drmAcp.ncol
+    assert(k &lt;= (m min n), "k cannot be greater than smaller of m, n.")
+    val pfxed = safeToNonNegInt((m min n) - k min p)
+
+    // Actual decomposition rank
+    val r = k + pfxed
+
+    // We represent Omega by its seed.
+    val omegaSeed = RandomUtils.getRandom().nextInt()
+
+    // Compute Y = A*Omega.  
+    var drmY = drmAcp.mapBlock(ncol = r) {
+        case (keys, blockA) =&gt;
+            val blockY = blockA %*% Matrices.symmetricUniformView(n, r, omegaSeed)
+        keys -&gt; blockY
+    }
+
+    var drmQ = dqrThin(drmY.checkpoint())._1
+
+    // Checkpoint Q if last iteration
+    if (q == 0) drmQ = drmQ.checkpoint()
+
+    var drmBt = drmAcp.t %*% drmQ
+    
+    // Checkpoint B' if last iteration
+    if (q == 0) drmBt = drmBt.checkpoint()
+
+    for (i &lt;- 0  until q) {
+        drmY = drmAcp %*% drmBt
+        drmQ = dqrThin(drmY.checkpoint())._1            
+        
+        // Checkpoint Q if last iteration
+        if (i == q - 1) drmQ = drmQ.checkpoint()
+        
+        drmBt = drmAcp.t %*% drmQ
+        
+        // Checkpoint B' if last iteration
+        if (i == q - 1) drmBt = drmBt.checkpoint()
+    }
+
+    val (inCoreUHat, d) = eigen(drmBt.t %*% drmBt)
+    val s = d.sqrt
+
+    // Since neither drmU nor drmV are actually computed until actually used
+    // we don't need the flags instructing compute (or not compute) either of the U,V outputs 
+    val drmU = drmQ %*% inCoreUHat
+    val drmV = drmBt %*% (inCoreUHat %*%: diagv(1 /: s))
+
+    (drmU(::, 0 until k), drmV(::, 0 until k), s(0 until k))
+}
+</code></pre>
+
+<p>Note: As a side effect of checkpointing, U and V values are returned as logical operators (i.e. they are neither checkpointed nor computed).  Therefore there is no physical work actually done to compute <code>\(\mathbf{U}\)</code> or <code>\(\mathbf{V}\)</code> until they are used in a subsequent expression.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>The scala <code>dssvd(...)</code> method can easily be called in any Spark or H2O application built with the <code>math-scala</code> library and the corresponding <code>Spark</code> or <code>H2O</code> engine module as follows:</p>
+
+<pre><code>import org.apache.mahout.math._
+import decompositions._
+import drm._
+
+
+val(drmU, drmV, s) = dssvd(drma, k = 40, q = 1)
+</code></pre>
+
+<h2 id="references">References</h2>
+
+<p>approximations of matrices](http://amath.colorado.edu/faculty/martinss/Pubs/2012_halko_dissertation.pdf)</p>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">This text is footer text. Footer text goes here.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
