@@ -4,7 +4,7 @@
  <title>Scotch Jekyll Bootstrap</title>
  <link href="http://scotch-io.github.io/atom.xml" rel="self"/>
  <link href="http://scotch-io.github.io/"/>
- <updated>2017-04-13T16:25:32-04:00</updated>
+ <updated>2017-04-13T16:37:07-04:00</updated>
  <id>http://scotch-io.github.io</id>
  <author>
    <name>Nicholas Cerminara</name>
@@ -17,6 +17,15 @@
    <link href="http://scotch-io.github.io/eigenfaces-with-apache-mahout.html"/>
    <updated>2016-11-10T08:26:34-05:00</updated>
    <id>http://scotch-io.github.io/eigenfaces-with-apache-mahout</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Deep Magic Volume 2: Absurdly Large OLS using Apache Mahout</title>
+   <link href="http://scotch-io.github.io/absurdly-large-ols.html"/>
+   <updated>2016-05-19T09:26:34-04:00</updated>
+   <id>http://scotch-io.github.io/absurdly-large-ols</id>
    <content type="html">
 </content>
  </entry>
